@@ -1,1 +1,130 @@
+body {
+    margin: 0;
+    background-image: url('https://media.istockphoto.com/id/1250539480/vector/pixel-video-game-abstract-seamless-background.jpg?s=612x612&w=0&k=20&c=L_3Cj9CPRafo5g8AuI0AflXjRFTeUggVL0NGzsuMHeA=');
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
 
+* {
+    font-family: 'Arial';
+}
+
+.gameboard {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+}
+
+.color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.celeste {
+    background: #5600e6;
+}
+
+.celeste.light {
+    background: #7f3fee;
+}
+
+.violeta {
+    background: #e62100;
+}
+
+.violeta.light {
+    background: #ee4e31;
+}
+
+.naranja {
+    background: #f0be2b;
+}
+
+.naranja.light {
+    background: #f1cf69;
+}
+
+.verde {
+    background: #7cc032;
+}
+
+.verde.light {
+    background: #a7e763;
+}
+
+.btn-start {
+    width: 400px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.btn-start:hover {
+    background: #d5dbdb;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-facil,
+.btn-normal,
+.btn-dificil {
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(100% - 140px);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-facil {
+    left: calc(50% - 800px);
+}
+
+.btn-normal {
+    left: calc(50% - 100px);
+}
+
+.btn-dificil {
+    right: calc(50% - 800px);
+}
+
+.btn-facil:hover,
+.btn-normal:hover,
+.btn-dificil:hover {
+    background: #d5dbdb;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+    display: none;
+}
